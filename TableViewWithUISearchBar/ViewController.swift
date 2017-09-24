@@ -54,11 +54,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-//        var statusBarFrame: CGRect = UIApplication.shared.statusBarFrame
-//        var yDiff: CGFloat = (navigationController?.navigationBar.frame.origin.y)! - (navigationController?.navigationBar.frame.size.height)! - statusBarFrame.size.height;
-//        navigationController?.navigationBar.frame = CGRect(x: 0, y: yDiff, width: 320, height: (navigationController?.navigationBar.frame.size.height)!)
-//       
+    // SearchBar Delegate Methods
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {      
        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
